@@ -41,5 +41,4 @@ public class RestResponseEntityExceptionHandler extends ResponseEntityExceptionH
     return new ResponseEntity<>(createResponseBody(ex.getMessage()), new HttpHeaders(),
         HttpStatus.BAD_REQUEST);
   }
-
 }
