@@ -33,7 +33,7 @@ public class ContactControllerIntegrationTest {
     final String[] EXPECTED_CONTACT_NAMES = {"Kostya", "Kiril", "Lev", "Max"};
     final int RESULT_SET_SIZE = 4;
     final String NAMEFILTER_REQUEST_PARAM = "^A.*$";
-    final String TESTED_URL = "/contacts";
+    final String TESTED_URL = "/hello/contacts";
 
     //Act && Assert
     mvc.perform(get(TESTED_URL)
@@ -50,7 +50,7 @@ public class ContactControllerIntegrationTest {
     //Arrange
     final int RESULT_SET_SIZE = 0;
     final String NAMEFILTER_REQUEST_PARAM = "^.*[aei].*$";
-    final String TESTED_URL = "/contacts";
+    final String TESTED_URL = "/hello/contacts";
 
     //Act && Assert
     mvc.perform(get(TESTED_URL)
@@ -64,7 +64,7 @@ public class ContactControllerIntegrationTest {
   @Test
   public void getContacts_WithNoRegexParam_returnBadRequest() throws Exception {
     //Arrange
-    final String TESTED_URL = "/contacts";
+    final String TESTED_URL = "/hello/contacts";
 
     //Act && Assert
     mvc.perform(get(TESTED_URL)
