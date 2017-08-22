@@ -17,3 +17,7 @@ This is a simple REST service.
 1. Build the project with maven: ```mvn clean install```
 1. Run the jar from target: ```java -jar target/demo-0.0.1-SNAPSHOT.jar```
 1. Application is accessible at http://localhost:8080/
+
+#### Remark
+If you are sending some regular expression through url, click on 'Encode URL' before sending a request.
+In order to have ability to encode url, use [Advanced REST client](https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo)
