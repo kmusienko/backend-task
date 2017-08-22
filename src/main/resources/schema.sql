@@ -1,0 +1,6 @@
+DROP TABLE IF EXISTS `contacts` ;
+CREATE TABLE `contacts` (
+  `id` BIGINT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
